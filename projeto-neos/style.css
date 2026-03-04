@@ -1,24 +1,23 @@
 body {
-  background-color: #f6f4ef;
+  background-color: #ececec;
   font-family: "Georgia", serif;
   color: #222;
-  line-height: 1.8;
+}
+
+.email-container {
   max-width: 700px;
   margin: 60px auto;
-  padding: 0 20px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  line-height: 1.7;
 }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 0.2em;
-}
-
-.subtitle {
-  font-style: italic;
-  color: #666;
-  margin-bottom: 40px;
-}
-
-p {
-  margin-bottom: 1.4em;
+.email-meta {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  font-size: 0.95em;
+  color: #555;
 }
