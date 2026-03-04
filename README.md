@@ -10,5 +10,7 @@ com base crítica e linguagem contemporânea.
 
 Textos disponíveis:
 - 2 João
+- 3 João
+- Filemom
 
 O projeto está em desenvolvimento contínuo.
