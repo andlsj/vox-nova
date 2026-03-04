@@ -55,6 +55,12 @@ h2 {
   margin: 4rem auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
 .project-card {
   background: white;
   padding: 2rem;
@@ -122,11 +128,33 @@ footer {
 <section class="projects">
   <h2>Projetos</h2>
 
+<div class="grid">
+
   <div class="project-card">
     <h3>Projeto Neos</h3>
     <p>Tradução das Escrituras em português contemporâneo com base nos manuscritos mais antigos.</p>
-    <a href="projeto-neos/index.html">Explorar →</a>
+    <a href="bible-project/index.html">Explorar →</a>
   </div>
+
+  <div class="project-card">
+      <h3>Traduções Diversas</h3>
+      <p>Textos clássicos e modernos traduzidos de múltiplas línguas.</p>
+      <a href="#">Explorar →</a>
+    </div>
+
+  <div class="project-card">
+      <h3>Ensaios</h3>
+      <p>Reflexões sobre linguagem, literatura e tradição.</p>
+      <a href="#">Explorar →</a>
+    </div>
+
+  <div class="project-card">
+      <h3>Crítica</h3>
+      <p>Análises literárias e comentários textuais.</p>
+      <a href="#">Explorar →</a>
+    </div>
+
+</div>
 </section>
 
 <section class="about">
