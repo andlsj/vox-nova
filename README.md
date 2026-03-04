@@ -1,2 +1,2 @@
 # vox-nova
-Projeto editorial com foco em tradução e estudos textuais.
+Projeto editorial independente voltado à tradução e estudos textuais.
