@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>3 João — Projeto Neos</title>
+  <style>
+    body {
+  background-color: #ececec;
+  font-family: "Georgia", serif;
+  color: #222;
+}
+
+.email-container {
+  max-width: 700px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  line-height: 1.7;
+}
+
+.email-meta {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+footer {
+      text-align: center;
+      padding: 0.5rem;
+      color: #777;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+.footnote-btn {
+  background: none;
+  border: none;
+  color: #1c2f4a;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.footnote-box {
+  display: none;
+  margin: 10px 0;
+  padding: 12px;
+  background: #f5f5f5;
+  border-left: 4px solid #444;
+  font-size: 0.9em;
+}
+  </style>
+</head>
+<body>
+
+<script>
+function toggleNote(id) {
+  const note = document.getElementById(id);
+  note.style.display =
+    note.style.display === "block" ? "none" : "block";
+}
+</script>
+
+  <main class="email-container">
+
+    <header class="email-header">
+      <h1>3 João</h1>
+    </header>
+
+    <section class="email-meta">
+      <p><strong>De:</strong> o Ancião</p>
+      <p><strong>Para:</strong> Gaio</p>
+      <p><strong>Assunto:</strong> Acolha os irmãos</p>
+    </section>
+
+    <article class="email-body">
+    <p>Escrevo ao meu caro amigo Gaio<sup>
+  <button class="footnote-btn" onclick="toggleNote('n1')">a</button>
+</sup>, a quem amo na verdade.
+
+<div id="n1" class="footnote-box">
+  <b>“Gaio”:</b> Um nome de origem latina (Gaius), também chamado Caio (Caius), vem da palavra latina "gaudere" que significa "alegrar-se"; portanto Gaio significa “alegre”.
+</div>
+    
+        <p>Caro amigo, oro para que você prospere em todas as coisas, assim como sua alma prospera, e que você tenha boa saúde. Pois fiquei muito feliz<sup>
+  <button class="footnote-btn" onclick="toggleNote('n2')">b</button>
+</sup> quando os irmãos vieram e testemunharam a sua verdade, assim como você está caminhando na verdade. Não tenho maior alegria do que isso: ouvir que meus filhos estão caminhando na verdade.</p>
+
+<div id="n2" class="footnote-box">
+  Na Vulgata, a palavra para “alegrar-se” – “gaudeo” – aqui usada na forma do pretérito perfeito ativo do indicativo, “gavisus sum”, tem a mesma raiz de Gaio (Gaius), o destinatário da carta de João.
+</div>
+    
+        <p>Caro amigo, tudo o que faz aos irmãos você faz fielmente — especialmente porque eles são estrangeiros, que testemunharam do seu amor na presença da assembleia. Você faz bem em enviá-los em sua jornada de uma maneira digna de Deus. Porque eles partiram por causa do Nome, não aceitando nada dos pagãos. Portanto, devemos receber tais pessoas, para que possamos nos tornar co-obreiros na verdade.</p>
+    
+        <p>Escrevi algo para a assembleia, mas Diótrefes<sup>
+  <button class="footnote-btn" onclick="toggleNote('n3')">c</button>
+</sup>, que gosta de mandar entre eles, não nos aceita. Por causa disso, se eu for, vou lembrá-lo das coisas que ele está fazendo, espalhando boatos sobre nós com palavras maliciosas. E como se isso não bastasse, ele não só não recebe bem os irmãos, como também proíbe aqueles que querem recebê-los e até os expulsa da assembleia!</p>
+
+<div id="n3" class="footnote-box">
+  <b>“Diótrefes”:</b> <i>Διοτρέφης</i>, do grego, significa “alimentado por Júpiter”. Júpiter é outro nome para Zeus.
+</div>
+
+        <p>Caro amigo, não imite o mal, mas o bem. Quem pratica o bem pertence a Deus. Quem pratica o mal não viu a Deus. Demétrio<sup>
+  <button class="footnote-btn" onclick="toggleNote('n4')">d</button>
+</sup> tem bom testemunho de todos, e pela própria verdade. E nós também damos testemunho, e você sabe que o nosso testemunho é verdadeiro.</p>
+
+<div id="n4" class="footnote-box">
+  <b>“Demétrio”:</b> <i>Δημήτριος</i>, também de origem grega, significa “devotado a Deméter”. Esses nomes pagãos, Diótrefes e Demétrio, são meramente incidentais em relação à narrativa. É o mesmo que um cristão dar ao seu filho os nomes de Dafne ou Marcos, mesmo que tenham origens pagãs. <i>“A presença de um segundo Demétrio — este cristão — [em contraste com o Demétrio do livro de Atos] ilustra o alcance do evangelho na população helenística, transformando pessoas sem apagar sua identidade cultural.”</i> (Léxico do BibleHub)
+</div>
+
+        <p>Eu tinha muitas coisas para lhe escrever, mas não quero fazê-lo com tinta e papel. No entanto, espero vê-lo em breve para que possamos conversar pessoalmente.
+    
+        <p class="signature">Paz a você. Os amigos lhe enviam saudações. Cumprimente os amigos pelo nome.</p>
+    </article>
+
+    <footer>
+      <p>Projeto Neos — Tradução independente em desenvolvimento e de Código Aberto - Domínio Público</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
