@@ -4,36 +4,143 @@
   <meta charset="UTF-8">
   <title>Vox Nova</title>
   <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #f6f4ef;
-      color: #222;
-      max-width: 800px;
-      margin: 60px auto;
-      line-height: 1.7;
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+
+.hero {
+  background: linear-gradient(135deg, #111 0%, #1c1c1c 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  margin-top: 1rem;
+  color: #bbb;
+  font-size: 1.2rem;
+}
+
+.manifesto {
+  max-width: 800px;
+  margin: 4rem auto;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.about {
+  max-width: 800px;
+  margin: 4rem auto;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.projects {
+  max-width: 750px;
+  margin: 4rem auto;
+}
+
+.project-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  max-width: 700px;
+  margin: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.project-card a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+}
+
+a:hover {
+    text-decoration: underline;
     }
-    a {
-      color: #1c2f4a;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+
+footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #888;
+  font-size: 0.85rem;
+  border-top: 1px solid #eee;
+  margin-top: 4rem;
+}
+
+::selection {
+  background: #111;
+  color: white;
+}
   </style>
 </head>
 <body>
 
+  <header class="hero">
   <h1>Vox Nova</h1>
-  <p>Projeto editorial independente dedicado à tradução e estudo textual.</p>
+  <p class="tagline">Texto. Tradução. Pensamento.</p>
+</header>
 
-  <h2>Projeto Neos</h2>
-  <p>Tradução independente das Escrituras com base crítica e linguagem contemporânea.</p>
-
-  <p><em>Projeto em construção</em></p>
-
+<section class="manifesto">
   <p>
-    <a href="projeto-neos/index.html">Acessar Projeto Neos</a>
+    Vox Nova é um projeto editorial independente dedicado à tradução,
+    reflexão e produção de textos com base histórica, rigor acadêmico
+    e linguagem contemporânea.
   </p>
+</section>
+
+<section class="projects">
+  <h2>Projetos</h2>
+
+  <div class="project-card">
+    <h3>Projeto Neos</h3>
+    <p>Tradução das Escrituras em português contemporâneo com base nos manuscritos mais antigos.</p>
+    <a href="projeto-neos/index.html">Explorar →</a>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Sobre</h2>
+  <p>
+    Fundado por André L. Silva, o Vox Nova nasce da convicção de que textos antigos
+    merecem novas vozes — fiéis às fontes e atentos ao presente.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Vox Nova — Projeto independente</p>
+  <p>Publicação aberta • Código aberto • Em desenvolvimento</p>
+</footer>
 
 </body>
 </html>
