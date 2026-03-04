@@ -35,35 +35,77 @@ footer {
       font-size: 0.9rem;
       font-style: italic;
     }
+
+.footnote-btn {
+  background: none;
+  border: none;
+  color: #1c2f4a;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.footnote-box {
+  display: none;
+  margin: 10px 0;
+  padding: 12px;
+  background: #f5f5f5;
+  border-left: 4px solid #444;
+  font-size: 0.9em;
+}
   </style>
 </head>
 <body>
+
+<script>
+function toggleNote(id) {
+  const note = document.getElementById(id);
+  note.style.display =
+    note.style.display === "block" ? "none" : "block";
+}
+</script>
 
   <main class="email-container">
 
     <header class="email-header">
       <h1>2 João</h1>
-      <p class="subtitle">Uma carta breve sobre verdade e amor</p>
     </header>
 
     <section class="email-meta">
-      <p><strong>De:</strong> o Ancião</p>
+      <p><strong>De:</strong> o Ancião<sup>
+  <button class="footnote-btn" onclick="toggleNote('n1')">a</button>
+</sup></p>
+<div id="n1" class="footnote-box">
+  Ou “o Presbítero”.
+</div>
       <p><strong>Para:</strong> a senhora eleita e seus filhos</p>
       <p><strong>Assunto:</strong> Cuidado com os farsantes</p>
     </section>
 
     <article class="email-body">
-      <p>Estou escrevendo a vocês, a quem amo na verdade — e não apenas eu, mas todos aqueles que conhecem a verdade — por causa da verdade que permanece em nós e estará conosco para sempre.</p>
-
+      <p>Estou escrevendo a vocês, a quem amo na verdade — e não apenas eu, mas todos aqueles que conhecem a verdade — por causa da verdade<sup>
+  <button class="footnote-btn" onclick="toggleNote('n2')">b</button>
+</sup> que permanece em nós e estará conosco para sempre.</p>
+<div id="n2" class="footnote-box">
+  Pode estar se referindo ao Espírito Santo, o “Espírito da verdade” (João 14:16-17).
+</div>
       <p>Graça, misericórdia e paz estarão conosco, vindas de Deus Pai e de Jesus, o Ungido, o Filho do Pai, em verdade e amor.</p>
 
       <p>Fiquei muito feliz de ter encontrado alguns dos seus filhos andando na verdade, assim como o mandamento que recebemos do Pai. E agora eu lhe peço, senhora — não como se estivesse escrevendo um novo mandamento, mas aquele que já temos desde o começo — que nos amemos uns aos outros. Isto é amor: que vivamos de acordo com os mandamentos de Jesus. Este é o mandamento, tal como todos vocês ouviram desde o princípio, para que todos vocês o sigam.</p>
 
-      <p>Porque muitos farsantes entraram no mundo - aqueles que não confessam que Jesus, o Ungido, veio em carne e osso. Esse é o farsante e o anti-Ungido. Cuidem-se para não perder o que conquistamos, mas que recebam a recompensa completa. Quem não permanece no ensino do Ungido, mas vai além, não tem Deus. Quem permanece no ensino, esse tem tanto o Pai como o Filho. Se alguém vier até vocês e não trouxer este ensino, não o recebam em casa e não deem boas-vindas, porque quem dá boas-vindas a esse tipo de pessoa participa das suas obras más.</p>
-
+      <p>Porque muitos farsantes entraram no mundo - aqueles que não confessam que Jesus, o Ungido, veio em carne e osso. Esse é o farsante e o anti-Ungido<sup>
+  <button class="footnote-btn" onclick="toggleNote('n3')">c</button>
+</sup>. Cuidem-se para não perder o que conquistamos, mas que recebam a recompensa completa. Quem não permanece no ensino do Ungido, mas vai além, não tem Deus. Quem permanece no ensino, esse tem tanto o Pai como o Filho. Se alguém vier até vocês e não trouxer este ensino, não o recebam em casa e não deem boas-vindas, porque quem dá boas-vindas a esse tipo de pessoa participa das suas obras más.</p>
+<div id="n3" class="footnote-box">
+  Alguém que se opõe a Jesus o Ungido.
+</div>
       <p>Embora tenha muitas coisas para te escrever, não quero fazê-lo com papel e tinta. Mas espero ir até vocês e falar pessoalmente, para que nossa alegria seja completa.</p>
 
-      <p class="signature">Os filhos da irmã eleita lhe enviam saudações.</p>
+      <p class="signature">Os filhos da irmã eleita lhe enviam saudações.<sup>
+  <button class="footnote-btn" onclick="toggleNote('n4')">d</button>
+</sup></p>
+<div id="n4" class="footnote-box">
+  Alguns manuscritos adicionam “Amém”.
+</div>
     </article>
 
     <footer>
