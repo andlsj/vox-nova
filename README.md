@@ -12,5 +12,7 @@ Textos disponíveis:
 - 2 João
 - 3 João
 - Filemom
+- Judá
+- Tito
 
 O projeto está em desenvolvimento contínuo.
