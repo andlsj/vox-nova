@@ -1,7 +1,9 @@
 # Vox Nova
 
 Vox Nova é um projeto editorial independente dedicado à tradução
-e estudo textual.
+e estudo textual. Aqui encontram-se traduções literárias em linguagem
+contemporânea e traduções livres em diversas línguas - desde latim até alemão
+e até anglo-saxão.
 
 ## Projeto Neos
 
