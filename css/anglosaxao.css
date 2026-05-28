@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap');
+
+body {
+    font-family: "Junicode";
+      margin: 0;
+      background-image: url("https://file.garden/ZWlUCY4S7Xz2vypS/archived%20backgrounds/colours/blue/backg157.jpg");
+      color: #fcfcea;
+      font-size: 1.2rem;
+      line-height: 1.6;
+}
+
+@font-face {
+    font-family: "Black Chancery";
+    src: url("../fonts/BLKCHCRY.TTF") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Junicode";
+    src: url("../fonts/Junicode.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Junicode";
+    src: url("../fonts/Junicode-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Junicode";
+    src: url("../fonts/Junicode-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Junicode";
+    src: url("../fonts/Junicode-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #0055c9;
+  border-left: 4px solid #111;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.781);
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  background: #ae0000;
+  border: 1px solid black;
+  border-left: 4px solid #111;
+  border-radius: 8px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  color: #006aff;
+  background: #ffffff;
+  border-color: black;
+  box-shadow: #000000a6 10px 7px 14px;
+}
+
+.translation-box {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 30px 60px auto;
+  background: #0055c9;
+  color: #ffffff;
+  text-shadow: #ae0000 2px 1px 1px;
+  padding: 40px;
+  border-radius: 8px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.translation-box h1 {
+  font-family: "Junicode";
+  text-align: center;
+}
+
+.translation-box h2 {
+  font-family: "Junicode";
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.container {
+  display: flex;
+  gap: 1;
+}
